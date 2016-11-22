@@ -265,7 +265,109 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 <!--counter-->
 <!--counter-->
 <!-- mail -->
-		
+
+	
+	
+<h2>Representative Publications<a id="sec_pubs"></a></h2>
+
+<p>These recent papers provide an overview of my research, including: large scale robotic learning, deep reinforcement learning algorithms, and deep learning of robotic sensorimotor skills.</p>
+
+<table cellpadding=5px>
+
+<tr>
+<td valign=top align=left rowspan=2>
+<img border=0 src="images/dvf.png" width="150" height="150" />
+</td>
+<td valign="top" align="left" colspan="2">
+<b>Deep Visual Foresight for Planning Robot Motion.</b><br />
+Chelsea Finn, Sergey Levine. arXiv 1610.00696.<br />
+[<a href="http://arxiv.org/pdf/1610.00696" onClick="recordOutboundLink(this, 'Links', 'dvf_pdf');return false;">PDF</a>]
+[<a href="https://sites.google.com/site/robotforesight/" onClick="recordOutboundLink(this, 'Links', 'dvf_web');return false;">Video</a>]
+[<a href="http://arxiv.org/abs/1610.00696" onClick="recordOutboundLink(this, 'Links', 'dvf_arxiv');return false;">arXiv</a>]
+</td>
+</tr>
+<tr>
+<td valign="top" align="justify">
+In this paper, we present a method for using video prediction models to plan and execute robotic manipulation skills. Specifically,
+we show that nonprehensile pushing behaviors can be generated automatically using a deep neural network video prediction model
+trained in a self-supervised manner using a large dataset of automatically generated robotic pushes. Control is performed by
+optimizing for actions for which the model predicts the desired outcome, which is specified by a user command. The results show
+that learned video prediction models perform nontrivial reasoning about physical interactions, and allow basic pushing skills
+to be executed with minimal manual engineering and no prior knowledge about physics or objects.
+</td>
+</tr>
+
+<tr>
+<td valign=top align=left rowspan=2>
+<img border=0 src="images/nafrobot.png" width="150" height="150" />
+</td>
+<td valign="top" align="left" colspan="2">
+<b>Deep Reinforcement Learning for Robotic Manipulation.</b><br />
+Shixiang Gu*, Ethan Holly*, Timothy Lillicrap, Sergey Levine. arXiv 1610.00633.<br />
+[<a href="http://arxiv.org/pdf/1610.00633" onClick="recordOutboundLink(this, 'Links', 'nafrobot_pdf');return false;">PDF</a>]
+[<a href="https://sites.google.com/site/deeproboticmanipulation/" onClick="recordOutboundLink(this, 'Links', 'nafrobot_web');return false;">Video</a>]
+[<a href="http://arxiv.org/abs/1610.00633" onClick="recordOutboundLink(this, 'Links', 'nafrobot_arxiv');return false;">arXiv</a>]
+</td>
+</tr>
+<tr>
+<td valign="top" align="justify">
+In this work, we explore how deep reinforcement learning methods based on normalized advantage functions (NAF) can be used to
+learn real-world robotic manipulation skills, with multiple robots simultaneously pooling their experiences. Our results show
+that we can obtain faster training and, in some cases, converge to a better solution when training on multiple robots, and
+we show that we can learn a real-world door opening skill with deep neural network policies using about 2.5 hours of total training
+time with two robots.
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" rowspan=2>
+<img border=0 src="images/handeye.png" width="150" height="150" />
+</td>
+<td valign="top" align="left" colspan="2">
+<b>Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection.</b><br />
+Sergey Levine, Peter Pastor, Alex Krizhevsky, Deirdre Quillen. ISER 2016.<br />
+[<a href="http://arxiv.org/pdf/1603.02199" onclick="recordOutboundLink(this, 'Links', 'handeye_pdf');return false;">PDF (extended)</a>]
+[<a href="papers/grasp_iser.pdf" onclick="recordOutboundLink(this, 'Links', 'handeye_pdf_short');return false;">PDF (ISER)</a>]
+[<a href="https://youtu.be/cXaic_k80uM" onclick="recordOutboundLink(this, 'Links', 'handeye_web');return false;">Video</a>]
+[<a href="http://arxiv.org/abs/1603.02199" onclick="recordOutboundLink(this, 'Links', 'handeye_arxiv');return false;">arXiv (extended)</a>]
+[<a href="http://googleresearch.blogspot.com/2016/03/deep-learning-for-robots-learning-from.html" onclick="recordOutboundLink(this, 'Links', 'handeye_blog');return false;">Google Research Blog</a>]
+[<a href="https://sites.google.com/site/brainrobotdata/home" onclick="recordOutboundLink(this, 'Links', 'handeye_data');return false;">Data</a>]
+</td>
+</tr>
+<tr>
+<td valign="top" align="justify">
+This paper presents an approach for learning grasping with continuous servoing by using large-scale data collection on a cluster of up to 14
+individual robots. We collected about 800,000 grasp attempts, which we used to train a large convolutional neural network to predict grasp
+success given an image and a candidate grasp vector. We then construct a continuous servoing mechanism that uses this network to continuously
+make decisions about the optimal motor command to maximize the probability of grasp success. We evaluate our approach by grasping objects that
+were not seen at training time, and compare to an open-loop variant that does not perform continuous feedback control.
+</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" rowspan=2>
+<img border=0 src="images/visuomotor.png" width="150" height="150" />
+</td>
+<td valign="top" align="left" colspan="1">
+<b>End-to-End Training of Deep Visuomotor Policies.</b><br />
+Sergey Levine*, Chelsea Finn*, Trevor Darrell, Pieter Abbeel. JMLR 17, 2016.<br />
+[<a href="http://arxiv.org/pdf/1504.00702" onclick="recordOutboundLink(this, 'Links', 'visuomotor_pdf');return false;">PDF</a>]
+[<a href="https://sites.google.com/site/visuomotorpolicy/" onclick="recordOutboundLink(this, 'Links', 'visuomotor_web');return false;">Video</a>]
+[<a href="http://arxiv.org/abs/1504.00702" onclick="recordOutboundLink(this, 'Links', 'visuomotor_arxiv');return false;">arXiv</a>]
+[<a href="http://rll.berkeley.edu/gps" onclick="recordOutboundLink(this, 'Links', 'visuomotor_code');return false;">Code</a>]
+</td>
+</tr>
+<tr>
+<td valign="top" align="justify">
+This paper presents a method for training visuomotor policies that perform both vision and control for robotic manipulation tasks. The
+policies are represented by deep convolutional neural networks with about 92,000 parameters. By
+learning to perform vision and control together, the vision system can adapt to the goals of the task, essentially performing goal-driven
+perception. Experimental results on a PR2 robot show that this method achieves substantial improvements in the accuracy of the final policy.
+</td>
+</tr>
+</table>
+
+	
 	
 	<div class="mail" id="mail">
 		<div class="container">
